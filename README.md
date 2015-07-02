@@ -28,10 +28,10 @@ it considers it as a checked malloc call.
 The script can be invoked with:
 
 * no argument: it will do a *git ls-files* and will do checks on these files;
-* *--stdin*: it will scan files taken from stdin with with one filename per line;
+* *--stdin*: it will scan files taken from stdin with one filename per line;
 * a filename: it will read the file and consider it contains the list of files to scan (one filename per line)
 
-Checks are done in file with the c, cpp and cxx extension.
+Checks are done on files with the c, cpp and cxx extension.
 
 
 
