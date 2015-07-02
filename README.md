@@ -1,5 +1,5 @@
 # Cave
-This repo containes miscellanous utilities that can help:
+This repo contains miscellanous utilities that can help:
 
 * malloc-check.py: this script tries to find unchecked calls to malloc / calloc / strdup / _strdup. The script is very basic, it works well when you have a sane codestyle.
 
