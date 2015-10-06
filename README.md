@@ -25,10 +25,16 @@ if ((a = malloc(12))) {
 ```
 it considers it as a checked malloc call.
 
+The script can be invoked with:
+
+* no argument: it will do a *git ls-files* and will do checks on these files;
+* *--stdin*: it will scan files taken from stdin with one filename per line;
+* a filename: it will read the file and consider it contains the list of files to scan (one filename per line)
+
+Checks are done on files with the c, cpp and cxx extension.
+
 * massive-rename.py: this script is there to do some renaming in files. I can't remember sed syntax, this script does some massive replacement in files
 registered in git.
-
-
-
+=
 
 
