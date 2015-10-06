@@ -1,7 +1,7 @@
 # Cave
 This repo contains miscellanous utilities that can help:
 
-* malloc-check.py: this script tries to find unchecked calls to malloc / calloc / strdup / _strdup. The script is very basic, it works well when you have a sane codestyle.
+* malloc-check.py: this script tries to find unchecked calls to malloc / calloc / strdup / \_strdup. The script is very basic, it works well when you have a sane codestyle.
 
 It considers that this case is checked by the caller
 ```C
@@ -25,6 +25,8 @@ if ((a = malloc(12))) {
 ```
 it considers it as a checked malloc call.
 
+* massive-rename.py: this script is there to do some renaming in files. I can't remember sed syntax, this script does some massive replacement in files
+registered in git.
 
 
 
