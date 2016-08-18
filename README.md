@@ -35,6 +35,10 @@ Checks are done on files with the c, cpp and cxx extension.
 
 * massive-rename.py: this script is there to do some renaming in files. I can't remember sed syntax, this script does some massive replacement in files
 registered in git.
-=
 
-
+* phantom3-video.cpp: a C program that connects on you DJI phantom 3 drone's camera (at 192.168.1.3) and will extract the H264 from the UDT stream. A typical invocation is:
+```console
+# ./phantom3-video | mplayer -demuxer h264es -framedrop -benchmark -
+```
+If you have a 3 or more second delay, I have it too :)
+To compile this you need UDT development headers.
